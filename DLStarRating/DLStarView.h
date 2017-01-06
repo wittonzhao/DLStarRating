@@ -12,14 +12,13 @@
 
 #import <UIKit/UIKit.h>
 
-#define kEdgeInsetBottom 20
-
+#define kEdgeInsetBottom 0
+#define kEdgeSpace 0
 @interface DLStarView : UIButton {
     
 }
 
-- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index allowFractions:(BOOL)fractions;
+- (id)initWithDefault:(UIImage*)star highlighted:(UIImage*)highlightedStar position:(int)index allowFractions:(BOOL)fractions fractionNumber: (int)number;
 - (void)centerIn:(CGRect)_frame with:(int)numberOfStars;
 - (void)setStarImage:(UIImage*)starImage highlightedStarImage:(UIImage*)highlightedImage;
-- (UIImage *)croppedImage:(UIImage*)image;
 @end
